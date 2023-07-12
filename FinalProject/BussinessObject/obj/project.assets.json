@@ -2349,11 +2349,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\BussinessObject\\BussinessObject.csproj",
-      "projectName": "BussinessObject",
-      "projectPath": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\BussinessObject\\BussinessObject.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\BussinessObject\\BusinessObject.csproj",
+      "projectName": "BusinessObject",
+      "projectPath": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\BussinessObject\\BusinessObject.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\BussinessObject\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\BussinessObject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2417,7 +2417,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

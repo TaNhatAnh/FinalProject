@@ -896,7 +896,7 @@
           }
         }
       },
-      "BussinessObject/1.0.0": {
+      "BusinessObject/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -905,10 +905,10 @@
           "Microsoft.Extensions.Configuration.Json": "6.0.0"
         },
         "compile": {
-          "bin/placeholder/BussinessObject.dll": {}
+          "bin/placeholder/BusinessObject.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BussinessObject.dll": {}
+          "bin/placeholder/BusinessObject.dll": {}
         }
       }
     }
@@ -2285,15 +2285,15 @@
         "version.txt"
       ]
     },
-    "BussinessObject/1.0.0": {
+    "BusinessObject/1.0.0": {
       "type": "project",
-      "path": "../BussinessObject/BussinessObject.csproj",
-      "msbuildProject": "../BussinessObject/BussinessObject.csproj"
+      "path": "../BussinessObject/BusinessObject.csproj",
+      "msbuildProject": "../BussinessObject/BusinessObject.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "BussinessObject >= 1.0.0"
+      "BusinessObject >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2302,11 +2302,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2323,8 +2323,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\BussinessObject\\BussinessObject.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\BussinessObject\\BussinessObject.csproj"
+            "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\BussinessObject\\BusinessObject.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\BussinessObject\\BusinessObject.csproj"
             }
           }
         }
@@ -2354,7 +2354,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

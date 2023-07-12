@@ -1,0 +1,19 @@
+﻿using BusinessObject.DTO;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Repository.Categories
+{
+    public interface ICategoryRepository
+    {
+        Task<List<CategoryDTO>> GetCategories();
+        Task<List<string>> GetCategoryGeneral();
+        Task<CategoryDTO> GetCategoryById(int id);
+        Task<CategoryDTO> CreateCategory(CategoryDTO categoryDTO);
+        Task<CategoryDTO> UpdateCategory(CategoryDTO categoryDTO);
+        Task DeleteCategory(int id);
+    }
+}

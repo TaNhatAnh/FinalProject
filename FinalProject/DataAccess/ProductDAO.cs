@@ -1,4 +1,5 @@
-﻿using BussinessObject.Model;
+﻿using BusinessObject.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace DataAccess
             var listProducts = new List<Product>();
             try
             {
-                using (var context = new ClothesStoreDBContext())
+                using (var context = new MyDBContext())
                 {
                     listProducts = await context.Products.Where(x => x.IsActive == true).Include(x => x.Category).ToListAsync();
                 }
@@ -35,7 +36,7 @@ namespace DataAccess
                         }*/
             try
             {
-                using (var context = new ClothesStoreDBContext())
+                using (var context = new MyDBContext())
                 {
                     listProducts = await context.Products.Include(x => x.Category).ToListAsync();
 
@@ -108,7 +109,7 @@ namespace DataAccess
             var listProducts = new List<Product>();
             try
             {
-                using (var context = new ClothesStoreDBContext())
+                using (var context = new MyDBContext())
                 {
                     listProducts = await context.Products.Where(x => x.CategoryId == catId && x.IsActive == true).Include(x => x.Category).ToListAsync();
                 }
@@ -125,7 +126,7 @@ namespace DataAccess
             var listProducts = new List<Product>();
             try
             {
-                using (var context = new ClothesStoreDBContext())
+                using (var context = new MyDBContext())
                 {
                     listProducts = await context.Products.Where(x => x.Category.CategoryGeneral == catGeneral && x.IsActive == true).Include(x => x.Category).ToListAsync();
                 }
@@ -142,7 +143,7 @@ namespace DataAccess
             Product product = new Product();
             try
             {
-                using (var context = new ClothesStoreDBContext())
+                using (var context = new MyDBContext())
                 {
                     product = await context.Products.Include(x => x.Category).SingleOrDefaultAsync(x => x.ProductId == id);
                 }
@@ -158,7 +159,7 @@ namespace DataAccess
         {
             try
             {
-                using (var context = new ClothesStoreDBContext())
+                using (var context = new MyDBContext())
                 {
                     await context.Products.AddAsync(product);
                     await context.SaveChangesAsync();
@@ -176,7 +177,7 @@ namespace DataAccess
         {
             try
             {
-                using (var context = new ClothesStoreDBContext())
+                using (var context = new MyDBContext())
                 {
                     await context.Products.AddRangeAsync(listProducts);
                     return await context.SaveChangesAsync() > 0;
@@ -192,7 +193,7 @@ namespace DataAccess
         {
             try
             {
-                using (var context = new ClothesStoreDBContext())
+                using (var context = new MyDBContext())
                 {
                     context.Entry<Product>(product).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
                     await context.SaveChangesAsync();
@@ -211,7 +212,7 @@ namespace DataAccess
             try
             {
                 Product product = new Product();
-                using (var context = new ClothesStoreDBContext())
+                using (var context = new MyDBContext())
                 {
                     product = await context.Products.Include(x => x.Category).SingleOrDefaultAsync(x => x.ProductId == id);
                     product.IsActive = false;
@@ -226,4 +227,4 @@ namespace DataAccess
         }
     }
 }
-}
+
