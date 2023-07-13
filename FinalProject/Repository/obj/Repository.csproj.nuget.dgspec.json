@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\Repository\\Repository.csproj": {}
+    "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\BussinessObject\\BusinessObject.csproj": {
+    "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\BussinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\BussinessObject\\BusinessObject.csproj",
+        "projectPath": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\BusinessObject\\BusinessObject.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\BussinessObject\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,11 +44,11 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.19, )"
+              "version": "[6.0.20, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.19, )"
+              "version": "[6.0.20, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -103,8 +103,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\BussinessObject\\BusinessObject.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\BussinessObject\\BusinessObject.csproj"
+              "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\BusinessObject\\BusinessObject.csproj"
               }
             }
           }
@@ -138,14 +138,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\Repository\\Repository.csproj": {
+    "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -162,11 +162,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\BussinessObject\\BusinessObject.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\BussinessObject\\BusinessObject.csproj"
+              "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\BusinessObject\\BusinessObject.csproj"
               },
-              "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Downloads\\FinalProject\\FinalProject\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Downloads\\PRN231\\FinalProject\\DataAccess\\DataAccess.csproj"
               }
             }
           }

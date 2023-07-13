@@ -1,4 +1,5 @@
 ﻿using BusinessObject.Models;
+using DataAccess.Utils;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ namespace DataAccess
 {
     public class CustomerDAO
     {
+        private static Random random = new Random();
         public static async Task<List<Customer>> GetCustomers(string? searchString)
         {
             var listCustomers = new List<Customer>();
@@ -33,7 +35,7 @@ namespace DataAccess
             return listCustomers;
         }
 
-        public static async Task<Customer> GetCustomerById(int id)
+        public static async Task<Customer> GetCustomerById(string id)
         {
             Customer customer = new Customer();
             try
@@ -49,7 +51,7 @@ namespace DataAccess
             }
             return customer;
         }
-        public static Customer GetCustomerByIdNotTask(int id)
+        public static Customer GetCustomerByIdNotTask(string id)
         {
             Customer customer = new Customer();
             try
@@ -72,6 +74,13 @@ namespace DataAccess
             {
                 using (var context = new MyDBContext())
                 {
+                    customer.CustomerId = RandomUtils.RandomString(5);
+                    var cus = await context.Customers.SingleOrDefaultAsync(x => x.CustomerId == customer.CustomerId);
+                    while (cus != null)
+                    {
+                        customer.CustomerId = RandomUtils.RandomString(5);
+                        cus = await context.Customers.SingleOrDefaultAsync(x => x.CustomerId == customer.CustomerId);
+                    }
                     await context.Customers.AddAsync(customer);
                     await context.SaveChangesAsync();
 
@@ -102,7 +111,7 @@ namespace DataAccess
             }
         }
 
-        public static async Task DeleteCustomer(int id)
+        public static async Task DeleteCustomer(string id)
         {
             try
             {
@@ -120,5 +129,7 @@ namespace DataAccess
                 throw new Exception(ex.Message);
             }
         }
+
+
     }
 }

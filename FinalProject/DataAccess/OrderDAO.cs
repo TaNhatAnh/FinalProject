@@ -49,7 +49,7 @@ namespace DataAccess
             return order;
         }
 
-        public static async Task<List<Order>> GetOrdersByCustomer(int customerId)
+        public static async Task<List<Order>> GetOrdersByCustomer(string customerId)
         {
             List<Order> Orders = new List<Order>();
             try
